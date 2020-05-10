@@ -1,0 +1,408 @@
+﻿<html>
+    <head>
+    <title> CSDGD'S 전국 날씨 알리미 </title>
+    </head>
+    <body>
+    <h2> 전국 날씨 알리미에 오신 것을 환영합니다! </h2>
+    <p> 아래 빈칸을 입력해주세요! </p>
+    <form method="post" action = "/cgi-bin/weather/weather.py">
+        <input name = "large" list = "large" type = "text" placeholder = "--선택--">
+        <datalist id = "large">
+
+		    <option value = "수도권" label = "수도권"></option>
+
+		    <option value = "서해안" label = "서해안"></option>
+
+		    <option value = "영서" label = "영서"></option>
+
+		    <option value = "영동" label = "영동"></option>
+
+		    <option value = "충북" label = "충북"></option>
+
+		    <option value = "충남" label = "충남"></option>
+
+		    <option value = "경북" label = "경북"></option>
+
+		    <option value = "경남" label = "경남"></option>
+
+		    <option value = "울릉" label = "울릉"></option>
+
+		    <option value = "전북" label = "전북"></option>
+
+		    <option value = "전남" label = "전남"></option>
+
+		    <option value = "제주" label = "제주"></option>
+
+        </datalist> <br><br>
+        <input name = "small" list = "small" type = "text" placeholder = "--선택--">
+        <datalist id = "small">
+
+            <option value = "서울" label = "서울(수도권)"></option>
+
+            <option value = "가평" label = "가평(수도권)"></option>
+
+            <option value = "강화" label = "강화(수도권)"></option>
+
+            <option value = "고양" label = "고양(수도권)"></option>
+
+            <option value = "과천" label = "과천(수도권)"></option>
+
+            <option value = "광명" label = "광명(수도권)"></option>
+
+            <option value = "광주" label = "광주(수도권)"></option>
+
+            <option value = "구리" label = "구리(수도권)"></option>
+
+            <option value = "군포" label = "군포(수도권)"></option>
+
+            <option value = "김포" label = "김포(수도권)"></option>
+
+            <option value = "남양주" label = "남양주(수도권)"></option>
+
+            <option value = "동천" label = "동천(수도권)"></option>
+
+            <option value = "문산" label = "문산(수도권)"></option>
+
+            <option value = "부천" label = "부천(수도권)"></option>
+
+            <option value = "성남" label = "성남(수도권)"></option>
+
+            <option value = "수원" label = "수원(수도권)"></option>
+
+            <option value = "시흥" label = "시흥(수도권)"></option>
+
+            <option value = "신갈" label = "신갈(수도권)"></option>
+
+            <option value = "안산" label = "안산(수도권)"></option>
+
+            <option value = "안성" label = "안성(수도권)"></option>
+
+            <option value = "안양" label = "안양(수도권)"></option>
+
+            <option value = "양주" label = "양주(수도권)"></option>
+
+            <option value = "양평" label = "양평(수도권)"></option>
+
+            <option value = "여주" label = "여주(수도권)"></option>
+
+            <option value = "연천" label = "연천(수도권)"></option>
+
+            <option value = "오산" label = "오산(수도권)"></option>
+
+            <option value = "용인" label = "용인(수도권)"></option>
+
+            <option value = "의왕" label = "의왕(수도권)"></option>
+
+            <option value = "의정부" label = "의정부(수도권)"></option>
+
+            <option value = "이천" label = "이천(수도권)"></option>
+
+            <option value = "인천" label = "인천(수도권)"></option>
+
+            <option value = "파주" label = "파주(수도권)"></option>
+
+            <option value = "평택" label = "평택(수도권)"></option>
+
+            <option value = "포천" label = "포천(수도권)"></option>
+
+            <option value = "하남" label = "하남(수도권)"></option>
+
+            <option value = "화성" label = "화성(수도권)"></option>
+
+            <option value = "백령도" label = "백령도(서해안)"></option>
+
+            <option value = "소천도" label = "소천도(서해안)"></option>
+
+            <option value = "연평도" label = "연평도(서해안)"></option>
+
+            <option value = "양구" label = "양구(영서)"></option>
+
+            <option value = "영월" label = "영월(영서)"></option>
+
+            <option value = "원주" label = "원주(영서)"></option>
+
+            <option value = "인제" label = "인제(영서)"></option>
+
+            <option value = "정선" label = "정선(영서)"></option>
+
+            <option value = "철원" label = "철원(영서)"></option>
+
+            <option value = "춘천" label = "춘천(영서)"></option>
+
+            <option value = "평창" label = "평창(영서)"></option>
+
+            <option value = "홍천" label = "홍천(영서)"></option>
+
+            <option value = "화천" label = "화천(영서)"></option>
+
+            <option value = "횡계" label = "횡계(영서)"></option>
+
+            <option value = "횡성" label = "횡성(영서)"></option>
+
+            <option value = "강릉" label = "강릉(영동)"></option>
+
+            <option value = "강원산간" label = "강원산간(영동)"></option>
+
+            <option value = "고성" label = "고성(영동)"></option>
+
+            <option value = "대관령" label = "대관령(영동)"></option>
+
+            <option value = "동해" label = "동해(영동)"></option>
+
+            <option value = "삼척" label = "삼척(영동)"></option>
+
+            <option value = "새말" label = "새말(영동)"></option>
+
+            <option value = "속초" label = "속초(영동)"></option>
+
+            <option value = "양양" label = "양양(영동)"></option>
+
+            <option value = "태백" label = "태백(영동)"></option>
+
+            <option value = "괴산" label = "괴산(충북)"></option>
+
+            <option value = "남이" label = "남이(충북)"></option>
+
+            <option value = "단양" label = "단양(충북)"></option>
+
+            <option value = "보은" label = "보은(충북)"></option>
+
+            <option value = "영동" label = "영동(충북)"></option>
+
+            <option value = "옥천" label = "옥천(충북)"></option>
+
+            <option value = "음성" label = "음성(충북)"></option>
+
+            <option value = "재천" label = "재천(충북)"></option>
+
+            <option value = "증평" label = "증평(충북)"></option>
+
+            <option value = "진천" label = "진천(충북)"></option>
+
+            <option value = "청원" label = "청원(충북)"></option>
+
+            <option value = "청주" label = "청주(충북)"></option>
+
+            <option value = "추풍령" label = "추풍령(충북)"></option>
+
+            <option value = "충주" label = "충주(충북)"></option>
+
+            <option value = "개룡" label = "개룡(충북)"></option>
+
+            <option value = "공주" label = "공주(충남)"></option>
+
+            <option value = "금산" label = "금산(충남)"></option>
+
+            <option value = "논산" label = "논산(충남)"></option>
+
+            <option value = "당진" label = "당진(충남)"></option>
+
+            <option value = "대전" label = "대전(충남)"></option>
+
+            <option value = "보령" label = "보령(충남)"></option>
+
+            <option value = "부여" label = "부여(충남)"></option>
+
+            <option value = "서산" label = "서산(충남)"></option>
+
+            <option value = "서천" label = "서천(충남)"></option>
+
+            <option value = "세종" label = "세종(충남)"></option>
+
+            <option value = "아산" label = "아산(충남)"></option>
+
+            <option value = "예산" label = "예산(충남)"></option>
+
+            <option value = "천안" label = "천안(충남)"></option>
+
+            <option value = "청양" label = "청양(충남)"></option>
+
+            <option value = "태안" label = "태안(충남)"></option>
+
+            <option value = "홍천" label = "홍천(충남)"></option>
+
+            <option value = "경산" label = "경산(경북)"></option>
+
+            <option value = "경주" label = "경주(경북)"></option>
+
+            <option value = "고령" label = "고령(경북)"></option>
+
+            <option value = "구미" label = "구미(경북)"></option>
+
+            <option value = "군위" label = "군위(경북)"></option>
+
+            <option value = "김천" label = "김천(경북)"></option>
+
+            <option value = "대구" label = "대구(경북)"></option>
+
+            <option value = "문경" label = "문경(경북)"></option>
+
+            <option value = "봉화" label = "봉화(경북)"></option>
+
+            <option value = "상주" label = "상주(경북)"></option>
+
+            <option value = "성주" label = "성주(경북)"></option>
+
+            <option value = "안동" label = "안동(경북)"></option>
+
+            <option value = "영덕" label = "영덕(경북)"></option>
+
+            <option value = "영양" label = "영양(경북)"></option>
+
+            <option value = "영주" label = "영주(경북)"></option>
+
+            <option value = "영천" label = "영천(경북)"></option>
+
+            <option value = "예천" label = "예천(경북)"></option>
+
+            <option value = "울진" label = "울진(경북)"></option>
+
+            <option value = "의성" label = "의성(경북)"></option>
+
+            <option value = "청도" label = "청도(경북)"></option>
+
+            <option value = "청송" label = "청송(경북)"></option>
+
+            <option value = "칠곡" label = "칠곡(경북)"></option>
+
+            <option value = "포항" label = "포항(경북)"></option>
+
+            <option value = "거제" label = "거제(경남)"></option>
+
+            <option value = "거창" label = "거창(경남)"></option>
+
+            <option value = "고성" label = "고성(경남)"></option>
+
+            <option value = "김해" label = "김해(경남)"></option>
+
+            <option value = "남해" label = "남해(경남)"></option>
+
+            <option value = "밀양" label = "밀양(경남)"></option>
+
+            <option value = "부산" label = "부산(경남)"></option>
+
+            <option value = "사천" label = "사천(경남)"></option>
+
+            <option value = "산청" label = "산청(경남)"></option>
+
+            <option value = "서상" label = "서상(경남)"></option>
+
+            <option value = "양산" label = "양산(경남)"></option>
+
+            <option value = "울산" label = "울산(경남)"></option>
+
+            <option value = "의령" label = "의령(경남)"></option>
+
+            <option value = "진주" label = "진주(경남)"></option>
+
+            <option value = "창녕" label = "창녕(경남)"></option>
+
+            <option value = "창원" label = "창원(경남)"></option>
+
+            <option value = "통영" label = "통영(경남)"></option>
+
+            <option value = "하동" label = "하동(경남)"></option>
+
+            <option value = "함안" label = "함안(경남)"></option>
+
+            <option value = "함양" label = "함양(경남)"></option>
+
+            <option value = "합천" label = "합천(경남)"></option>
+
+            <option value = "독도" label = "독도(울릉)"></option>
+
+            <option value = "울릉도" label = "울릉도(울릉)"></option>
+
+            <option value = "고창" label = "고창(전북)"></option>
+
+            <option value = "군산" label = "군산(전북)"></option>
+
+            <option value = "김제" label = "김제(전북)"></option>
+
+            <option value = "남원" label = "남원(전북)"></option>
+
+            <option value = "무주" label = "무주(전북)"></option>
+
+            <option value = "부안" label = "부안(전북)"></option>
+
+            <option value = "순창" label = "순창(전북)"></option>
+
+            <option value = "완주" label = "완주(전북)"></option>
+
+            <option value = "익산" label = "익산(전북)"></option>
+
+            <option value = "임실" label = "임실(전북)"></option>
+
+            <option value = "장수" label = "장수(전북)"></option>
+
+            <option value = "전주" label = "전주(전북)"></option>
+
+            <option value = "정읍" label = "정읍(전북)"></option>
+
+            <option value = "진안" label = "진안(전북)"></option>
+
+            <option value = "강진" label = "강진(전남)"></option>
+
+            <option value = "고흥" label = "고흥(전남)"></option>
+
+            <option value = "곡성" label = "곡성(전남)"></option>
+
+            <option value = "광양" label = "광양(전남)"></option>
+
+            <option value = "광주" label = "광주(전남)"></option>
+
+            <option value = "구례" label = "구례(전남)"></option>
+
+            <option value = "나주" label = "나주(전남)"></option>
+
+            <option value = "담양" label = "담양(전남)"></option>
+
+            <option value = "목포" label = "목포(전남)"></option>
+
+            <option value = "무안" label = "무안(전남)"></option>
+
+            <option value = "보성" label = "보성(전남)"></option>
+
+            <option value = "순천" label = "순천(전남)"></option>
+
+            <option value = "신안" label = "신안(전남)"></option>
+
+            <option value = "여수" label = "여수(전남)"></option>
+
+            <option value = "영광" label = "영광(전남)"></option>
+
+            <option value = "영암" label = "영암(전남)"></option>
+
+            <option value = "완도" label = "완도(전남)"></option>
+
+            <option value = "장성" label = "장성(전남)"></option>
+
+            <option value = "장흥" label = "장흥(전남)"></option>
+
+            <option value = "진도" label = "진도(전남)"></option>
+
+            <option value = "함평" label = "함평(전남)"></option>
+
+            <option value = "해남" label = "해남(전남)"></option>
+
+            <option value = "화순" label = "화순(전남)"></option>
+
+            <option value = "흑산도" label = "흑산도(전남)"></option>
+
+            <option value = "고산" label = "고산(제주)"></option>
+
+            <option value = "서귀포" label = "서귀포(제주)"></option>
+
+            <option value = "성산포" label = "성산포(제주)"></option>
+
+            <option value = "윗세오름" label = "윗세오름(제주)"></option>
+
+            <option value = "제주" label = "제주(제주)"></option>
+
+        </datalist><br><br>
+    <input type="submit" value="입력!"> <br>
+    </form>
+    <h5> 출처 : <a href = "weather.naver.com" > 네이버 날씨 </a> </h5>
+    <b> <a href = "/CSEGDhomepage.html">로비로 돌아가기</a> </b>
+    </body>
+</html>
